@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "ff96ee1c-6bf3-4b9f-8bde-1fcd73637d35",
+		"name": "ControlStock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19200363"
+	},
+	"item": [
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:62911/api/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "62911",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:62911/api/categoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"categoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:18:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Hardware\",\n        \"productos\": null\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Software\",\n        \"productos\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Software\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:62911/api/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "62911",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert hardware",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Hardware\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/categoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"categoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:17:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Insert Software",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Software\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/categoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"categoria"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:17:47 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:62911/api/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "62911",
+							"path": [
+								"api",
+								"producto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:62911/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1355"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:23:35 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Teclado\",\n        \"lineaProducto\": \"H\",\n        \"precio\": 5000,\n        \"categoriaId\": 1,\n        \"categoria\": {\n            \"id\": 1,\n            \"nombre\": \"Hardware\",\n            \"productos\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Monitor\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Mouse\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Monitor\",\n        \"lineaProducto\": \"H\",\n        \"precio\": 5000,\n        \"categoriaId\": 1,\n        \"categoria\": {\n            \"id\": 1,\n            \"nombre\": \"Hardware\",\n            \"productos\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Teclado\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Mouse\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Mouse\",\n        \"lineaProducto\": \"H\",\n        \"precio\": 5000,\n        \"categoriaId\": 1,\n        \"categoria\": {\n            \"id\": 1,\n            \"nombre\": \"Hardware\",\n            \"productos\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Teclado\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Monitor\",\n                    \"lineaProducto\": \"H\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 1\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"SQL Server\",\n        \"lineaProducto\": \"S\",\n        \"precio\": 5000,\n        \"categoriaId\": 2,\n        \"categoria\": {\n            \"id\": 2,\n            \"nombre\": \"Software\",\n            \"productos\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"VS Code\",\n                    \"lineaProducto\": \"S\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 2\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 5,\n        \"nombre\": \"VS Code\",\n        \"lineaProducto\": \"S\",\n        \"precio\": 5000,\n        \"categoriaId\": 2,\n        \"categoria\": {\n            \"id\": 2,\n            \"nombre\": \"Software\",\n            \"productos\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"SQL Server\",\n                    \"lineaProducto\": \"S\",\n                    \"precio\": 5000,\n                    \"categoriaId\": 2\n                }\n            ]\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"VS Code\",\r\n    \"LineaProducto\": \"S\",\r\n    \"precio\":5000,\r\n    \"CategoriaId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:62911/api/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "62911",
+							"path": [
+								"api",
+								"producto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Validation H/S test",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Teclado\",\r\n    \"LineaProducto\": \"J\",\r\n    \"precio\":5000,\r\n    \"CategoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:20:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "209"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"LineaProducto\": [\n            \"Debe ser S o H\"\n        ]\n    },\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"|643d826b-4655f8d414060431.\"\n}"
+						},
+						{
+							"name": "validation price",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Teclado\",\r\n    \"LineaProducto\": \"H\",\r\n    \"precio\":0,\r\n    \"CategoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:21:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "216"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"Precio\": [\n            \"El precio debe ser mayor a 0\"\n        ]\n    },\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"|643d826c-4655f8d414060431.\"\n}"
+						},
+						{
+							"name": "Insert correct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Teclado\",\r\n    \"LineaProducto\": \"H\",\r\n    \"precio\":5000,\r\n    \"CategoriaId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:21:30 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Insert Software",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"SQL Server\",\r\n    \"LineaProducto\": \"S\",\r\n    \"precio\":5000,\r\n    \"CategoriaId\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:62911/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "62911",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Jan 2023 20:22:46 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
